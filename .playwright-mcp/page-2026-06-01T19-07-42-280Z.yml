@@ -1,0 +1,158 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - generic [ref=e10]: Llámanos
+        - text: ":"
+        - link "+1 (809) 465-4750" [ref=e11] [cursor=pointer]:
+          - /url: tel:+18094654750
+      - generic [ref=e12]: "|"
+      - generic [ref=e13]:
+        - img [ref=e14]
+        - link "bhbtravelandtour@gmail.com" [ref=e17] [cursor=pointer]:
+          - /url: mailto:bhbtravelandtour@gmail.com
+    - generic [ref=e19]:
+      - link "BHB Travel and Tour" [ref=e20] [cursor=pointer]:
+        - /url: /
+        - img "BHB Travel and Tour" [ref=e21]
+      - navigation [ref=e22]:
+        - link "Tours" [ref=e23] [cursor=pointer]:
+          - /url: /#tours
+        - link "Nosotros" [ref=e24] [cursor=pointer]:
+          - /url: /#about
+        - link "Contacto" [ref=e25] [cursor=pointer]:
+          - /url: /#contact
+        - link "Reservar" [ref=e26] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=e27]:
+        - button "ES" [ref=e28] [cursor=pointer]:
+          - img "ES" [ref=e29]
+        - button "EN" [ref=e30] [cursor=pointer]:
+          - img "EN" [ref=e31]
+        - button "PT" [ref=e32] [cursor=pointer]:
+          - img "PT" [ref=e33]
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - img "Saona Island" [ref=e37]
+        - generic [ref=e40]:
+          - generic [ref=e41]: Más popular
+          - heading "Saona Island" [level=1] [ref=e42]
+          - generic [ref=e43]:
+            - img [ref=e44]
+            - text: Isla Saona · Parque Nacional del Este
+          - generic [ref=e47]:
+            - generic [ref=e48]:
+              - generic [ref=e49]: Desde
+              - generic [ref=e50]: $89 USD
+            - link "Reservar Ahora" [ref=e51] [cursor=pointer]:
+              - /url: https://wa.me/18295555555
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - heading "Descripción" [level=3] [ref=e55]:
+              - img [ref=e56]
+              - text: Descripción
+            - paragraph [ref=e58]: Disfruta de una experiencia inolvidable con todo incluido y los mejores guías.
+          - generic [ref=e59]:
+            - heading "Galería" [level=3] [ref=e60]:
+              - img [ref=e61]
+              - text: Galería
+            - generic [ref=e65]:
+              - img "Gallery 0" [ref=e66]
+              - img "Gallery 1" [ref=e67]
+              - img "Gallery 2" [ref=e68]
+              - img "Gallery 3" [ref=e69]
+          - generic [ref=e70]:
+            - heading "¿Qué incluye?" [level=3] [ref=e71]:
+              - img [ref=e72]
+              - text: ¿Qué incluye?
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - img [ref=e76]
+                - generic [ref=e78]: Transporte terrestre y marítimo
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - generic [ref=e82]: Party boat + piscina natural
+              - generic [ref=e83]:
+                - img [ref=e84]
+                - generic [ref=e86]: Almuerzo buffet + bebidas
+              - generic [ref=e87]:
+                - img [ref=e88]
+                - generic [ref=e90]: Guía oficial y animación
+          - generic [ref=e91]:
+            - heading "Itinerario" [level=3] [ref=e92]:
+              - img [ref=e93]
+              - text: Itinerario
+            - generic [ref=e96]:
+              - generic [ref=e99]: 08:00 AM - Recogida en el hotel
+              - generic [ref=e102]: 09:30 AM - Llegada al destino
+              - generic [ref=e105]: 12:30 PM - Almuerzo buffet
+              - generic [ref=e108]: 03:00 PM - Tiempo libre
+              - generic [ref=e111]: 05:00 PM - Retorno al hotel
+        - generic [ref=e113]:
+          - heading "Información Importante" [level=4] [ref=e114]:
+            - img [ref=e115]
+            - text: Información Importante
+          - paragraph [ref=e117]: Llevar protector solar, ropa cómoda, traje de baño y toalla. No apto para mujeres embarazadas.
+      - generic [ref=e118]:
+        - heading "¿Listo para vivir esta experiencia?" [level=2] [ref=e119]
+        - paragraph [ref=e120]: Reserva fácilmente por WhatsApp y asegura tu lugar hoy mismo.
+        - link "Reservar por WhatsApp" [ref=e121] [cursor=pointer]:
+          - /url: https://wa.me/18295555555
+          - img [ref=e122]
+          - text: Reservar por WhatsApp
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - link "BHB Travel and Tour" [ref=e128] [cursor=pointer]:
+            - /url: "#"
+            - img "BHB Travel and Tour" [ref=e129]
+          - paragraph [ref=e130]: Tu mejor opción en excursiones por República Dominicana. Experiencias auténticas con la calidez del Caribe.
+        - generic [ref=e131]:
+          - heading "Tours" [level=4] [ref=e132]
+          - list [ref=e133]:
+            - listitem [ref=e134]:
+              - link "Saona Island" [ref=e135] [cursor=pointer]:
+                - /url: "#tours"
+            - listitem [ref=e136]:
+              - link "Party Boat" [ref=e137] [cursor=pointer]:
+                - /url: "#tours"
+            - listitem [ref=e138]:
+              - link "ATV & Booguies" [ref=e139] [cursor=pointer]:
+                - /url: "#tours"
+        - generic [ref=e140]:
+          - heading "Compañía" [level=4] [ref=e141]
+          - list [ref=e142]:
+            - listitem [ref=e143]:
+              - link "Nosotros" [ref=e144] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e145]:
+              - link "Contacto" [ref=e146] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e147]:
+          - heading "Síguenos" [level=4] [ref=e148]
+          - list [ref=e149]:
+            - listitem [ref=e150]:
+              - link "Instagram" [ref=e151] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e152]:
+              - link "Facebook" [ref=e153] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e154]:
+              - link "TikTok" [ref=e155] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e156]:
+        - generic [ref=e157]: © 2026 BHB Travel and Tour. Todos los derechos reservados.
+        - generic [ref=e158]:
+          - link "Instagram" [ref=e159] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e160]
+          - link "Facebook" [ref=e163] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e164]
+          - link "TikTok" [ref=e166] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e167]

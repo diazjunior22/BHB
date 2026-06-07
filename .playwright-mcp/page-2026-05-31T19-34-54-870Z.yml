@@ -1,0 +1,425 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - 'link "Llámanos: +1 (809) 465-4750" [ref=e8] [cursor=pointer]':
+          - /url: https://wa.me/18094654750
+          - img [ref=e9]
+          - text: "Llámanos: +1 (809) 465-4750"
+        - link "bhbtravelandtour@gmail.com" [ref=e11] [cursor=pointer]:
+          - /url: mailto:bhbtravelandtour@gmail.com
+          - img [ref=e12]
+          - text: bhbtravelandtour@gmail.com
+      - generic [ref=e15]:
+        - button "ES" [ref=e16] [cursor=pointer]:
+          - img "ES" [ref=e17]
+        - button "EN" [ref=e18] [cursor=pointer]:
+          - img "EN" [ref=e19]
+        - button "PT" [ref=e20] [cursor=pointer]:
+          - img "PT" [ref=e21]
+    - generic [ref=e23]:
+      - link "BHB Travel and Tour" [ref=e24] [cursor=pointer]:
+        - /url: "#"
+        - img "BHB Travel and Tour" [ref=e25]
+      - navigation [ref=e26]:
+        - link "Tours" [ref=e27] [cursor=pointer]:
+          - /url: "#tours"
+        - link "Nosotros" [ref=e28] [cursor=pointer]:
+          - /url: "#about"
+        - link "Contacto" [ref=e29] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Reservar" [ref=e30] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e31]:
+    - generic [ref=e36]:
+      - generic [ref=e39]: Punta Cana, República Dominicana
+      - heading "Descubre el Caribe como nunca antes" [level=1] [ref=e40]:
+        - text: Descubre el
+        - text: Caribe como
+        - text: nunca antes
+      - generic [ref=e41]: EXPERIENCIAS EXCLUSIVAS · SERVICIO VIP
+      - paragraph [ref=e42]: Descubre la verdadera esencia de Punta Cana con nuestro servicio premium. Disfruta de guías expertos, atención personalizada y recuerdos inolvidables.
+      - generic [ref=e43]:
+        - link "Explorar tours" [ref=e44] [cursor=pointer]:
+          - /url: "#tours"
+          - text: Explorar tours
+          - img [ref=e45]
+        - link "Contáctanos" [ref=e47] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: 5k+
+          - generic [ref=e51]: Viajeros felices
+        - generic [ref=e52]:
+          - generic [ref=e53]: 12+
+          - generic [ref=e54]: Tours exclusivos
+        - generic [ref=e55]:
+          - generic [ref=e56]: 8+
+          - generic [ref=e57]: Años de experiencia
+        - generic [ref=e58]:
+          - generic [ref=e59]: "4.9"
+          - generic [ref=e60]: Satisfacción
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - heading "tours.title.1 tours.title.2" [level=2] [ref=e64]
+        - paragraph [ref=e65]: Todo incluido. Solo trae tus ganas de disfrutar.
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - generic [ref=e70]: ★
+              - generic [ref=e71]: Más popular
+            - img "Saona Island" [ref=e72]
+          - generic [ref=e73]:
+            - heading "Saona Island" [level=3] [ref=e74]
+            - generic [ref=e75]: Isla Saona · Parque Nacional del Este
+            - list [ref=e76]:
+              - listitem [ref=e77]:
+                - img [ref=e78]
+                - generic [ref=e80]: Transporte terrestre y marítimo
+              - listitem [ref=e81]:
+                - img [ref=e82]
+                - generic [ref=e84]: Party boat + piscina natural
+              - listitem [ref=e85]:
+                - img [ref=e86]
+                - generic [ref=e88]: Almuerzo buffet + bebidas
+              - listitem [ref=e89]:
+                - img [ref=e90]
+                - generic [ref=e92]: Guía oficial y animación
+            - link "Reservar ahora" [ref=e93] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: ★
+              - generic [ref=e98]: Fiesta total
+            - img "Party Boat" [ref=e99]
+          - generic [ref=e100]:
+            - heading "Party Boat" [level=3] [ref=e101]
+            - generic [ref=e102]: Costa de Punta Cana
+            - list [ref=e103]:
+              - listitem [ref=e104]:
+                - img [ref=e105]
+                - generic [ref=e107]: Transporte ida y vuelta
+              - listitem [ref=e108]:
+                - img [ref=e109]
+                - generic [ref=e111]: Barra libre + snorkel
+              - listitem [ref=e112]:
+                - img [ref=e113]
+                - generic [ref=e115]: DJ, baile, concursos y premios
+              - listitem [ref=e116]:
+                - img [ref=e117]
+                - generic [ref=e119]: Animación y shows en vivo
+            - link "Reservar ahora" [ref=e120] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]: ★
+              - generic [ref=e125]: Aventura
+            - img "Booguies, Polaris y ATV Motos" [ref=e126]
+          - generic [ref=e127]:
+            - heading "Booguies, Polaris y ATV Motos" [level=3] [ref=e128]
+            - generic [ref=e129]: Ruta Macao · Cenote · Montaña
+            - list [ref=e130]:
+              - listitem [ref=e131]:
+                - img [ref=e132]
+                - generic [ref=e134]: Transporte ida y vuelta
+              - listitem [ref=e135]:
+                - img [ref=e136]
+                - generic [ref=e138]: "Degustación: café, cacao, mamajuana, ron y tabaco"
+              - listitem [ref=e139]:
+                - img [ref=e140]
+                - generic [ref=e142]: Cenote natural + Playa Macao
+            - link "Reservar ahora" [ref=e143] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - generic [ref=e147]: ★
+              - generic [ref=e148]: RECOMENDADO
+            - img "City Tour in Santo Domingo" [ref=e149]
+          - generic [ref=e150]:
+            - heading "City Tour in Santo Domingo" [level=3] [ref=e151]
+            - generic [ref=e152]: Santo Domingo
+            - generic [ref=e153]: "Nota: Niños hasta 11 años tienen precio especial"
+            - list [ref=e154]:
+              - listitem [ref=e155]:
+                - img [ref=e156]
+                - generic [ref=e158]: Cueva de los tres ojos
+              - listitem [ref=e159]:
+                - img [ref=e160]
+                - generic [ref=e162]: Museo Faro a Colón
+              - listitem [ref=e163]:
+                - img [ref=e164]
+                - generic [ref=e166]: Palacio Presidencial
+              - listitem [ref=e167]:
+                - img [ref=e168]
+                - generic [ref=e170]: Zona Colonial
+              - listitem [ref=e171]:
+                - img [ref=e172]
+                - generic [ref=e174]: Calle "El Conde"
+              - listitem [ref=e175]:
+                - img [ref=e176]
+                - generic [ref=e178]: Calle "Las Damas"
+              - listitem [ref=e179]:
+                - img [ref=e180]
+                - generic [ref=e182]: Fortaleza Osama
+              - listitem [ref=e183]:
+                - img [ref=e184]
+                - generic [ref=e186]: 1era Catedral
+              - listitem [ref=e187]:
+                - img [ref=e188]
+                - generic [ref=e190]: Panteón Nacional
+              - listitem [ref=e191]:
+                - img [ref=e192]
+                - generic [ref=e194]: Museo de la Casa Real
+              - listitem [ref=e195]:
+                - img [ref=e196]
+                - generic [ref=e198]: Casa Diego Colón
+              - listitem [ref=e199]:
+                - img [ref=e200]
+                - generic [ref=e202]: Almuerzo y bebidas NO alcohólicas
+            - link "Reservar ahora" [ref=e203] [cursor=pointer]:
+              - /url: "#contact"
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - generic [ref=e208]:
+          - img [ref=e209]
+          - img "BHB Travel and Tour" [ref=e215]
+        - generic [ref=e216]:
+          - generic [ref=e217]: 10+
+          - generic [ref=e218]:
+            - strong [ref=e219]: Excelencia
+            - text: años de trayectoria
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - generic [ref=e222]: Quiénes somos
+          - heading "Tu puerta al Caribe auténtico" [level=2] [ref=e223]:
+            - text: Tu puerta al
+            - text: Caribe auténtico
+        - paragraph [ref=e224]: En BHB Travel and Tour somos apasionados por mostrar lo mejor de la República Dominicana. Cada excursión está diseñada para que vivas momentos inolvidables, con total seguridad y comodidad.
+        - paragraph [ref=e225]: "Desde Isla Saona hasta aventuras en ATV, nos encargamos de todo: transporte, comida, bebidas y la mejor animación."
+        - list [ref=e226]:
+          - listitem [ref=e227]:
+            - img [ref=e228]
+            - generic [ref=e230]: Guías certificados
+          - listitem [ref=e231]:
+            - img [ref=e232]
+            - generic [ref=e234]: Transporte incluido
+          - listitem [ref=e235]:
+            - img [ref=e236]
+            - generic [ref=e238]: Mejor precio garantizado
+          - listitem [ref=e239]:
+            - img [ref=e240]
+            - generic [ref=e242]: Atención personalizada
+    - generic [ref=e243]:
+      - generic:
+        - img
+      - generic:
+        - img
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - text: Testimonios
+          - heading "Lo que dicen nuestros viajeros" [level=2] [ref=e246]:
+            - text: Lo que dicen
+            - text: nuestros viajeros
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e250]: SM
+              - generic [ref=e251]:
+                - heading "Sarah Mitchell" [level=4] [ref=e252]
+                - generic [ref=e253]:
+                  - img [ref=e254]
+                  - generic [ref=e257]: New York, USA
+              - generic [ref=e258]: Mar 2026
+            - generic [ref=e259]:
+              - img [ref=e260]
+              - img [ref=e262]
+              - img [ref=e264]
+              - img [ref=e266]
+              - img [ref=e268]
+            - paragraph [ref=e270]: "\"The Saona Island tour was absolutely breathtaking! Crystal clear waters, amazing crew, and the buffet lunch was delicious. Highly recommend!\""
+            - img [ref=e272]
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - generic [ref=e275]: MT
+              - generic [ref=e276]:
+                - heading "Manoj Tomar" [level=4] [ref=e277]
+                - generic [ref=e278]:
+                  - img [ref=e279]
+                  - generic [ref=e282]: Rajasthan, India
+              - generic [ref=e283]: Feb 2026
+            - generic [ref=e284]:
+              - img [ref=e285]
+              - img [ref=e287]
+              - img [ref=e289]
+              - img [ref=e291]
+              - img [ref=e293]
+            - paragraph [ref=e295]: "\"Unforgettable ATV adventure! The cenote was stunning and the cultural stop with mamajuana tasting made it truly unique. A must-do!\""
+            - img [ref=e297]
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - generic [ref=e300]: CR
+              - generic [ref=e301]:
+                - heading "Carolina Ruiz" [level=4] [ref=e302]
+                - generic [ref=e303]:
+                  - img [ref=e304]
+                  - generic [ref=e307]: Buenos Aires, Argentina
+              - generic [ref=e308]: Ene 2026
+            - generic [ref=e309]:
+              - img [ref=e310]
+              - img [ref=e312]
+              - img [ref=e314]
+              - img [ref=e316]
+              - img [ref=e318]
+            - paragraph [ref=e320]: "\"El Party Boat superó todas mis expectativas. El DJ, la barra libre y el snorkel hicieron de este día algo mágico. ¡Volveré sin dudas!\""
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - generic [ref=e323]: JW
+              - generic [ref=e324]:
+                - heading "James Walker" [level=4] [ref=e325]
+                - generic [ref=e326]:
+                  - img [ref=e327]
+                  - generic [ref=e330]: Londres, Reino Unido
+              - generic [ref=e331]: Mar 2026
+            - generic [ref=e332]:
+              - img [ref=e333]
+              - img [ref=e335]
+              - img [ref=e337]
+              - img [ref=e339]
+              - img [ref=e341]
+            - paragraph [ref=e343]: "\"Professional from start to finish. They picked us up right on time, the guides were knowledgeable, and Saona Island is paradise on earth.\""
+          - generic [ref=e344]:
+            - generic [ref=e345]:
+              - generic [ref=e346]: LD
+              - generic [ref=e347]:
+                - heading "Léa Dubois" [level=4] [ref=e348]
+                - generic [ref=e349]:
+                  - img [ref=e350]
+                  - generic [ref=e353]: París, Francia
+              - generic [ref=e354]: Feb 2026
+            - generic [ref=e355]:
+              - img [ref=e356]
+              - img [ref=e358]
+              - img [ref=e360]
+              - img [ref=e362]
+              - img [ref=e364]
+            - paragraph [ref=e366]: "\"The ATV tour was the highlight of our trip! Driving through the Dominican countryside and ending at Macao Beach was absolutely perfect.\""
+          - generic [ref=e367]:
+            - generic [ref=e368]:
+              - generic [ref=e369]: M+P
+              - generic [ref=e370]:
+                - heading "Michael & Priya" [level=4] [ref=e371]
+                - generic [ref=e372]:
+                  - img [ref=e373]
+                  - generic [ref=e376]: Toronto, Canadá
+              - generic [ref=e377]: Ene 2026
+            - generic [ref=e378]:
+              - img [ref=e379]
+              - img [ref=e381]
+              - img [ref=e383]
+              - img [ref=e385]
+              - img [ref=e387]
+            - paragraph [ref=e389]: "\"Booked three tours with BHB and each one was better than the last. Exceptional service, great food, and memories we will cherish forever.\""
+    - generic [ref=e392]:
+      - generic [ref=e393]:
+        - heading "Hablemos de tu próximo viaje" [level=2] [ref=e394]
+        - paragraph [ref=e395]: Estamos aquí para ayudarte a planear la experiencia perfecta en Punta Cana. Déjanos tu mensaje y responderemos rápidamente.
+        - generic [ref=e396]:
+          - generic [ref=e397]:
+            - img [ref=e399]
+            - generic [ref=e401]: +1 (809) 465-4750
+          - generic [ref=e402]:
+            - img [ref=e404]
+            - generic [ref=e407]: bhbtravelandtour@gmail.com
+        - generic [ref=e408]:
+          - link "Instagram" [ref=e409] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e410]
+          - link "Facebook" [ref=e413] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e414]
+      - generic [ref=e416]:
+        - heading "Enviar mensaje" [level=3] [ref=e417]
+        - generic [ref=e418]:
+          - generic [ref=e419]:
+            - generic [ref=e420]: Nombre completo
+            - textbox "Nombre completo" [ref=e421]
+          - generic [ref=e422]:
+            - generic [ref=e423]: Correo electrónico
+            - textbox "Correo electrónico" [ref=e424]
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - generic [ref=e427]: Tour de interés
+              - generic [ref=e428]:
+                - combobox "Tour de interés" [ref=e429] [cursor=pointer]:
+                  - option "Selecciona un tour..." [selected]
+                  - option "Saona Island"
+                  - option "Party Boat"
+                  - option "Booguies, Polaris y ATV Motos"
+                  - option "City Tour in Santo Domingo"
+                - img
+            - generic [ref=e430]:
+              - generic [ref=e431]: Personas
+              - spinbutton "Personas" [ref=e432]: "1"
+          - generic [ref=e433]:
+            - generic [ref=e434]: Mensaje
+            - textbox "Mensaje" [ref=e435]
+          - button "Enviar mensaje" [ref=e436] [cursor=pointer]:
+            - text: Enviar mensaje
+            - img [ref=e437]
+  - contentinfo [ref=e440]:
+    - generic [ref=e441]:
+      - generic [ref=e442]:
+        - generic [ref=e443]:
+          - link "BHB Travel and Tour" [ref=e444] [cursor=pointer]:
+            - /url: "#"
+            - img "BHB Travel and Tour" [ref=e445]
+          - paragraph [ref=e446]: Tu mejor opción en excursiones por República Dominicana. Experiencias auténticas con la calidez del Caribe.
+        - generic [ref=e447]:
+          - heading "Tours" [level=4] [ref=e448]
+          - list [ref=e449]:
+            - listitem [ref=e450]:
+              - link "Saona Island" [ref=e451] [cursor=pointer]:
+                - /url: "#tours"
+            - listitem [ref=e452]:
+              - link "Party Boat" [ref=e453] [cursor=pointer]:
+                - /url: "#tours"
+            - listitem [ref=e454]:
+              - link "ATV & Booguies" [ref=e455] [cursor=pointer]:
+                - /url: "#tours"
+        - generic [ref=e456]:
+          - heading "Compañía" [level=4] [ref=e457]
+          - list [ref=e458]:
+            - listitem [ref=e459]:
+              - link "Nosotros" [ref=e460] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e461]:
+              - link "Contacto" [ref=e462] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e463]:
+          - heading "Síguenos" [level=4] [ref=e464]
+          - list [ref=e465]:
+            - listitem [ref=e466]:
+              - link "Instagram" [ref=e467] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e468]:
+              - link "Facebook" [ref=e469] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e470]:
+              - link "TikTok" [ref=e471] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e472]:
+        - generic [ref=e473]: © 2026 BHB Travel and Tour. Todos los derechos reservados.
+        - generic [ref=e474]:
+          - link "Instagram" [ref=e475] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e476]
+          - link "Facebook" [ref=e479] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e480]
+          - link "TikTok" [ref=e482] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e483]

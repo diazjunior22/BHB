@@ -1,0 +1,237 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e8]
+        - generic [ref=e10]: Llámanos
+        - text: ":"
+        - link "+1 (809) 465-4750" [ref=e11] [cursor=pointer]:
+          - /url: tel:+18094654750
+      - generic [ref=e12]: "|"
+      - generic [ref=e13]:
+        - img [ref=e14]
+        - link "bhbtravelandtour@gmail.com" [ref=e17] [cursor=pointer]:
+          - /url: mailto:bhbtravelandtour@gmail.com
+    - generic [ref=e19]:
+      - link "BHB Travel and Tour" [ref=e20] [cursor=pointer]:
+        - /url: /
+        - img "BHB Travel and Tour" [ref=e21]
+      - navigation [ref=e22]:
+        - link "Tours" [ref=e23] [cursor=pointer]:
+          - /url: /#tours
+        - link "Nosotros" [ref=e24] [cursor=pointer]:
+          - /url: /#about
+        - link "Contacto" [ref=e25] [cursor=pointer]:
+          - /url: /#contact
+        - link "Reservar" [ref=e26] [cursor=pointer]:
+          - /url: /#contact
+      - generic [ref=e27]:
+        - button "ES" [ref=e28] [cursor=pointer]:
+          - img "ES" [ref=e29]
+        - button "EN" [ref=e30] [cursor=pointer]:
+          - img "EN" [ref=e31]
+        - button "PT" [ref=e32] [cursor=pointer]:
+          - img "PT" [ref=e33]
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - img "City Tour in Santo Domingo" [ref=e37]
+        - generic [ref=e40]:
+          - heading "City Tour in Santo Domingo" [level=1] [ref=e41]
+          - generic [ref=e42]:
+            - generic [ref=e43]: ⭐ 4.9 (327 opiniones)
+            - generic [ref=e44]: 📍 Santo Domingo
+            - generic [ref=e45]: ⏱️ 8 horas
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: Desde
+              - generic [ref=e49]: $89 USD
+            - link "Reservar Ahora" [ref=e50] [cursor=pointer]:
+              - /url: https://wa.me/18295555555
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - img "Gallery 1" [ref=e55]
+            - generic [ref=e56]:
+              - img "Gallery 2" [ref=e57]
+              - img "Gallery 3" [ref=e58]
+          - generic [ref=e59]:
+            - heading "La Experiencia" [level=2] [ref=e60]
+            - paragraph [ref=e61]: Disfruta de una experiencia inolvidable con todo incluido y los mejores guías.
+          - generic [ref=e62]:
+            - heading "Destacados" [level=2] [ref=e63]
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - img [ref=e67]
+                - generic [ref=e69]: Cueva de los tres ojos
+              - generic [ref=e70]:
+                - img [ref=e72]
+                - generic [ref=e74]: Museo Faro a Colón
+              - generic [ref=e75]:
+                - img [ref=e77]
+                - generic [ref=e79]: Palacio Presidencial
+              - generic [ref=e80]:
+                - img [ref=e82]
+                - generic [ref=e84]: Zona Colonial
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - heading "¿Qué incluye?" [level=3] [ref=e87]
+              - generic [ref=e88]:
+                - generic [ref=e89]:
+                  - img [ref=e90]
+                  - generic [ref=e92]: Cueva de los tres ojos
+                - generic [ref=e93]:
+                  - img [ref=e94]
+                  - generic [ref=e96]: Museo Faro a Colón
+                - generic [ref=e97]:
+                  - img [ref=e98]
+                  - generic [ref=e100]: Palacio Presidencial
+                - generic [ref=e101]:
+                  - img [ref=e102]
+                  - generic [ref=e104]: Zona Colonial
+                - generic [ref=e105]:
+                  - img [ref=e106]
+                  - generic [ref=e108]: Calle "El Conde"
+                - generic [ref=e109]:
+                  - img [ref=e110]
+                  - generic [ref=e112]: Calle "Las Damas"
+                - generic [ref=e113]:
+                  - img [ref=e114]
+                  - generic [ref=e116]: Fortaleza Osama
+                - generic [ref=e117]:
+                  - img [ref=e118]
+                  - generic [ref=e120]: 1era Catedral
+                - generic [ref=e121]:
+                  - img [ref=e122]
+                  - generic [ref=e124]: Panteón Nacional
+                - generic [ref=e125]:
+                  - img [ref=e126]
+                  - generic [ref=e128]: Museo de la Casa Real
+                - generic [ref=e129]:
+                  - img [ref=e130]
+                  - generic [ref=e132]: Casa Diego Colón
+                - generic [ref=e133]:
+                  - img [ref=e134]
+                  - generic [ref=e136]: Almuerzo y bebidas NO alcohólicas
+            - generic [ref=e137]:
+              - heading "No incluye" [level=3] [ref=e138]
+              - generic [ref=e139]:
+                - generic [ref=e140]:
+                  - img [ref=e141]
+                  - generic [ref=e144]: Gastos personales y souvenirs
+                - generic [ref=e145]:
+                  - img [ref=e146]
+                  - generic [ref=e149]: Propinas (opcional)
+                - generic [ref=e150]:
+                  - img [ref=e151]
+                  - generic [ref=e154]: Fotos profesionales
+          - generic [ref=e155]:
+            - heading "Itinerario" [level=2] [ref=e156]
+            - generic [ref=e157]:
+              - generic [ref=e160]:
+                - generic [ref=e161]: 08:00 AM
+                - generic [ref=e162]: Recogida en el hotel
+              - generic [ref=e165]:
+                - generic [ref=e166]: 09:30 AM
+                - generic [ref=e167]: Llegada al destino
+              - generic [ref=e170]:
+                - generic [ref=e171]: 12:30 PM
+                - generic [ref=e172]: Almuerzo buffet
+              - generic [ref=e175]:
+                - generic [ref=e176]: 03:00 PM
+                - generic [ref=e177]: Tiempo libre
+              - generic [ref=e180]:
+                - generic [ref=e181]: 05:00 PM
+                - generic [ref=e182]: Retorno al hotel
+          - generic [ref=e183]:
+            - heading "Opiniones de Viajeros" [level=2] [ref=e184]
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187]: ⭐⭐⭐⭐⭐
+                - paragraph [ref=e188]: "\"¡La mejor experiencia de nuestro viaje! Todo estuvo perfectamente organizado y el guía fue increíble.\""
+                - generic [ref=e189]: "- Carlos M."
+              - generic [ref=e190]:
+                - generic [ref=e191]: ⭐⭐⭐⭐⭐
+                - paragraph [ref=e192]: "\"Totalmente recomendado. Una aventura inolvidable, sin duda volveremos a reservar con ustedes.\""
+                - generic [ref=e193]: "- Laura G."
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - generic [ref=e197]: Desde
+            - generic [ref=e198]: $89 USD
+          - generic [ref=e199]:
+            - heading "Información Importante" [level=4] [ref=e200]
+            - paragraph [ref=e201]: Llevar protector solar, ropa cómoda, traje de baño y toalla. No apto para mujeres embarazadas.
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - img [ref=e204]
+              - generic [ref=e206]: Cueva de los tres ojos
+            - generic [ref=e207]:
+              - img [ref=e208]
+              - generic [ref=e210]: Museo Faro a Colón
+            - generic [ref=e211]:
+              - img [ref=e212]
+              - generic [ref=e214]: Palacio Presidencial
+          - link "Reservar por WhatsApp" [ref=e215] [cursor=pointer]:
+            - /url: https://wa.me/18295555555
+            - img [ref=e216]
+            - text: Reservar por WhatsApp
+      - generic [ref=e219]:
+        - heading "¿Listo para vivir esta experiencia?" [level=2] [ref=e220]
+        - paragraph [ref=e221]: Reserva fácilmente por WhatsApp y asegura tu lugar hoy mismo.
+        - link "Reservar por WhatsApp" [ref=e222] [cursor=pointer]:
+          - /url: https://wa.me/18295555555
+          - img [ref=e223]
+          - text: Reservar por WhatsApp
+  - contentinfo [ref=e225]:
+    - generic [ref=e226]:
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - link "BHB Travel and Tour" [ref=e229] [cursor=pointer]:
+            - /url: "#"
+            - img "BHB Travel and Tour" [ref=e230]
+          - paragraph [ref=e231]: Tu mejor opción en excursiones por República Dominicana. Experiencias auténticas con la calidez del Caribe.
+        - generic [ref=e232]:
+          - heading "Tours" [level=4] [ref=e233]
+          - list [ref=e234]:
+            - listitem [ref=e235]:
+              - link "Saona Island" [ref=e236] [cursor=pointer]:
+                - /url: "#tours"
+            - listitem [ref=e237]:
+              - link "Party Boat" [ref=e238] [cursor=pointer]:
+                - /url: "#tours"
+            - listitem [ref=e239]:
+              - link "ATV & Booguies" [ref=e240] [cursor=pointer]:
+                - /url: "#tours"
+        - generic [ref=e241]:
+          - heading "Compañía" [level=4] [ref=e242]
+          - list [ref=e243]:
+            - listitem [ref=e244]:
+              - link "Nosotros" [ref=e245] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e246]:
+              - link "Contacto" [ref=e247] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e248]:
+          - heading "Síguenos" [level=4] [ref=e249]
+          - list [ref=e250]:
+            - listitem [ref=e251]:
+              - link "Instagram" [ref=e252] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e253]:
+              - link "Facebook" [ref=e254] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e255]:
+              - link "TikTok" [ref=e256] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e257]:
+        - generic [ref=e258]: © 2026 BHB Travel and Tour. Todos los derechos reservados.
+        - generic [ref=e259]:
+          - link "Instagram" [ref=e260] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e261]
+          - link "Facebook" [ref=e264] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e265]
+          - link "TikTok" [ref=e267] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e268]
