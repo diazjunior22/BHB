@@ -31,10 +31,10 @@ import heroCatalinaIsland from '../assets/bhb/Catalina Island.jpeg';
 import heroParasailing from '../assets/bhb/Parasailing.jpeg';
 import heroElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import heroAtv from '../assets/bhb/boguie.png';
-import elDorado1 from '../assets/bhb/el dorado park/1.jpeg';
-import elDorado2 from '../assets/bhb/el dorado park/2.jpeg';
-import elDorado3 from '../assets/bhb/el dorado park/3.jpeg';
-import elDorado4 from '../assets/bhb/el dorado park/4.jpeg';
+import elDorado1 from '../assets/bhb/El Dorado Park/1.jpeg';
+import elDorado2 from '../assets/bhb/El Dorado Park/2.jpeg';
+import elDorado3 from '../assets/bhb/El Dorado Park/3.jpeg';
+import elDorado4 from '../assets/bhb/El Dorado Park/4.jpeg';
 
 import saona1 from '../assets/bhb/Saona Island/1.jpg';
 import saona2 from '../assets/bhb/Saona Island/2.jpg';
@@ -42,11 +42,11 @@ import saona3 from '../assets/bhb/Saona Island/3.webp';
 import saona4 from '../assets/bhb/Saona Island/4.jpg';
 import saona5 from '../assets/bhb/Saona Island/5.jpg';
 
-import party1 from '../assets/bhb/Party Boat/1.jpg';
-import party2 from '../assets/bhb/Party Boat/2.jpg';
-import party3 from '../assets/bhb/Party Boat/3.jpg';
-import party4 from '../assets/bhb/Party Boat/4.jpg';
-import party5 from '../assets/bhb/Party Boat/5.jpg';
+import party1 from '../assets/bhb/Party boat/1.jpg';
+import party2 from '../assets/bhb/Party boat/2.jpg';
+import party3 from '../assets/bhb/Party boat/3.jpg';
+import party4 from '../assets/bhb/Party boat/4.jpg';
+import party5 from '../assets/bhb/Party boat/5.jpg';
 
 import congo1 from '../assets/bhb/congo/1.jpg';
 import congo2 from '../assets/bhb/congo/2.jpg';
