@@ -1,0 +1,270 @@
+.bavaro-section {
+  margin-top: 2rem;
+}
+
+.bavaro-header-info {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.bavaro-header-info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.bavaro-header-info p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* 1 col on mobile, 2 on tablet, 4 on desktop */
+.bavaro-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .bavaro-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bavaro-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .bavaro-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bavaro-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bavaro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.bavaro-card-featured {
+  border: 2px solid #0ea5e9;
+  background: linear-gradient(to bottom, #ffffff, #f0f9ff);
+}
+
+.bavaro-badge {
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.badge-night {
+  background: linear-gradient(135deg, #4f46e5, #1e1b4b);
+}
+
+.badge-sea {
+  background: linear-gradient(135deg, #0ea5e9, #0369a1);
+}
+
+.bavaro-card-header {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bavaro-card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.bavaro-card-subtitle {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.bavaro-card-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.bavaro-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.bavaro-price-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 600;
+}
+
+.bavaro-price-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.bavaro-duration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.bavaro-card-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+}
+
+.bavaro-card-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.text-green-500 {
+  color: #10B981;
+  min-width: 16px;
+  margin-top: 2px;
+}
+
+.bavaro-btn-book {
+  width: 100%;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: auto;
+}
+
+.bavaro-btn-book:hover {
+  background: #1eb955;
+}
+
+/* Info Grid below cards */
+.bavaro-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .bavaro-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bavaro-info-card, .bavaro-restrictions {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #eaeaea;
+}
+
+.bavaro-info-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.bavaro-info-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.icon-green { color: #10B981; }
+.icon-red { color: #EF4444; }
+.icon-yellow { color: #F59E0B; }
+
+.bavaro-list-check, .bavaro-list-cross, .bavaro-restrictions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bavaro-list-check li, .bavaro-list-cross li, .bavaro-restrictions li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+.bavaro-list-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10B981;
+  font-weight: bold;
+}
+
+.bavaro-list-cross li::before {
+  content: "×";
+  position: absolute;
+  left: 0;
+  color: #EF4444;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.bavaro-restrictions li::before {
+  content: "•";
+  position: absolute;
+  left: 4px;
+  color: #F59E0B;
+  font-weight: bold;
+}

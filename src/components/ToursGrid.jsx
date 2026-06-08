@@ -17,6 +17,7 @@ import imgCatalinaIsland from '../assets/bhb/Catalina Island.jpeg';
 import imgParasailing from '../assets/bhb/Parasailing.jpeg';
 import imgElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import imgAtv from '../assets/bhb/boguie.png';
+import imgBavaro from '../assets/bhb/bavaro.png';
 
 const ToursGrid = () => {
   const { t } = useTranslation();
@@ -320,7 +321,7 @@ const ToursGrid = () => {
 
           <TourCard 
             id="bavaropark"
-            img={imgAtv} 
+            img={imgBavaro} 
             badgeKey="tour.bavaropark.badge"
             nameKey="tour.bavaropark.name"
             locationKey="tour.bavaropark.location"

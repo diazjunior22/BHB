@@ -15,6 +15,7 @@ import {
   ShieldCheck,
   CalendarCheck
 } from 'lucide-react';
+import BavaroActivities from '../components/BavaroActivities';
 
 import heroSaona from '../assets/bhb/Saona Island.jpeg';
 import heroCongo from '../assets/bhb/congo.jpeg';
@@ -367,10 +368,16 @@ const TourDetail = () => {
             </div>
 
             <div className="td2-hero-actions">
-              <a href="#booking-form" onClick={scrollToBooking} className="td2-btn-primary">
-                <WhatsAppIcon className="mr-2" />
-                {getLabel('Book', 'Reservar', 'Reservar')}
-              </a>
+              {id === 'bavaropark' ? (
+                <a href="#bavaro-activities" onClick={(e) => { e.preventDefault(); document.getElementById('bavaro-activities').scrollIntoView({behavior: 'smooth', block: 'start'})}} className="td2-btn-primary">
+                  {getLabel('View Activities', 'Ver Actividades', 'Ver Atividades')}
+                </a>
+              ) : (
+                <a href="#booking-form" onClick={scrollToBooking} className="td2-btn-primary">
+                  <WhatsAppIcon className="mr-2" />
+                  {getLabel('Book', 'Reservar', 'Reservar')}
+                </a>
+              )}
               <button className="td2-btn-secondary" onClick={() => document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})}>
                 <ImageIcon size={20} className="mr-2" />
                 {t('tour.showAllPhotos') || 'Mostrar fotos'}
@@ -382,7 +389,7 @@ const TourDetail = () => {
 
       {/* 2. MASONRY GALLERY */}
       <section id="gallery" className="td2-container td2-gallery-section">
-        <div className="td2-gallery-grid">
+        <div className="td2-gallery-grid desktop-only">
           <div className="td2-gallery-main">
             <img src={images.gallery[0]} alt="Gallery 1" />
           </div>
@@ -393,12 +400,100 @@ const TourDetail = () => {
             <img src={images.gallery[4]} alt="Gallery 5" />
           </div>
         </div>
+        
+        <div className="td2-gallery-mobile mobile-only">
+          {images.gallery.map((img, i) => (
+            <img key={i} src={img} alt={`Gallery ${i+1}`} className="td2-mobile-slide" />
+          ))}
+        </div>
       </section>
 
-      {/* 3. MAIN CONTENT (2 COLUMNS) */}
-      <section className="td2-container td2-layout">
-        
-        <div className="td2-content-left">
+      {/* 3. MAIN CONTENT */}
+      {id === 'bavaropark' ? (
+        <section className="td2-container" id="bavaro-activities">
+          <BavaroActivities />
+          
+          {/* VIDEO PREMIUM */}
+          {images.video && (
+            <motion.div 
+              className="td2-block"
+              style={{marginTop: '40px'}}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="td2-section-title">{getLabel('Video', 'Video', 'Vídeo')}</h2>
+              <div className={`td2-video-container ${images.videoVertical ? 'is-vertical' : ''}`}>
+                {images.video.includes('embed') ? (
+                  <iframe
+                    src={images.video}
+                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                    frameBorder="0"
+                    title="Video"
+                  ></iframe>
+                ) : (
+                  <video controls preload="metadata">
+                    <source src={images.video} type="video/mp4" />
+                    {getLabel('Browser not supported.', 'Navegador no soportado.', 'Navegador não suportado.')}
+                  </video>
+                )}
+              </div>
+            </motion.div>
+          )}
+
+          {/* REVIEWS */}
+          {reviews.length > 0 && (
+            <motion.div 
+              className="td2-block"
+              style={{marginTop: '40px'}}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="td2-section-title">{getLabel('Traveler Reviews', 'Opiniones Reales', 'Avaliações Reais')}</h2>
+              <div className="td2-reviews-slider">
+                {reviews.map((rev, i) => (
+                  <div key={i} className="td2-review-card">
+                    <div className="td2-review-header">
+                      <div className="td2-avatar">{rev.name.charAt(0)}</div>
+                      <div>
+                        <h4>{rev.name}</h4>
+                        <div className="td2-stars">
+                          {[1,2,3,4,5].map(s => <Star key={s} size={14} fill="currentColor" />)}
+                        </div>
+                      </div>
+                    </div>
+                    <p>"{rev.text}"</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+
+          {/* FAQ */}
+          <motion.div 
+            className="td2-block"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="td2-section-title">{t('tour.faqTitle') || getLabel('FAQ', 'Preguntas Frecuentes', 'Perguntas Frequentes')}</h2>
+            <div className="td2-faq-list">
+              {[1,2,3,4].map(num => (
+                <FAQItem 
+                  key={num} 
+                  question={t(`tour.faq.q${num}`)} 
+                  answer={t(`tour.faq.a${num}`)} 
+                />
+              ))}
+            </div>
+          </motion.div>
+        </section>
+      ) : (
+        <section className="td2-container td2-layout">
+          
+          <div className="td2-content-left">
           
           {/* ABOUT THE EXPERIENCE */}
           <motion.div 
@@ -561,6 +656,7 @@ const TourDetail = () => {
            </div>
         </div>
       </section>
+      )}
 
       {/* 4. FINAL CTA BANNER */}
       <section className="td2-final-cta">
@@ -573,15 +669,16 @@ const TourDetail = () => {
           >
             <h2>{t('tour.ctaFinalTitle') || getLabel('Ready?', '¿Listo?', 'Pronto?')}</h2>
             <p>{t('tour.ctaFinalSub')}</p>
-            <a href="#booking-form" onClick={scrollToBooking} className="td2-btn-white">
+            <a href={id === 'bavaropark' ? "#bavaro-activities" : "#booking-form"} onClick={id === 'bavaropark' ? (e) => { e.preventDefault(); document.getElementById('bavaro-activities').scrollIntoView({behavior: 'smooth', block: 'start'})} : scrollToBooking} className="td2-btn-white">
               <WhatsAppIcon className="mr-2" />
-              {getLabel('Book Now', 'Reserva Ahora', 'Reservar Agora')}
+              {id === 'bavaropark' ? getLabel('View Activities', 'Ver Actividades', 'Ver Atividades') : getLabel('Book Now', 'Reserva Ahora', 'Reservar Agora')}
             </a>
           </motion.div>
         </div>
       </section>
 
       {/* MOBILE STICKY BOTTOM BAR */}
+      {id !== 'bavaropark' && (
       <div className="td2-mobile-sticky-bar">
         <div className="td2-ms-price">
           <span className="td2-ms-label">{getLabel('Price', 'Precio', 'Preço')}</span>
@@ -592,6 +689,7 @@ const TourDetail = () => {
           {getLabel('Book', 'Reservar', 'Reservar')}
         </a>
       </div>
+      )}
 
     </div>
   );
