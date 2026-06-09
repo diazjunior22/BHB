@@ -18,6 +18,7 @@ import imgParasailing from '../assets/bhb/Parasailing.jpeg';
 import imgElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import imgAtv from '../assets/bhb/boguie.png';
 import imgBavaro from '../assets/bhb/bavaro.png';
+import imgPartyBoat from '../assets/bhb/partyboat.jpeg';
 
 const ToursGrid = () => {
   const { t } = useTranslation();
@@ -55,7 +56,7 @@ const ToursGrid = () => {
 
           <TourCard 
             id="party"
-            img={imgCongo}
+            img={imgPartyBoat}
             badgeKey="tour.party.badge"
             nameKey="tour.party.name"
             locationKey="tour.party.location"

@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from '../I18nContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Star, 
-  MapPin, 
-  Clock, 
-  CheckCircle2, 
-  XCircle, 
-  ChevronDown, 
-  ChevronUp, 
-  Play, 
+import {
+  Star,
+  MapPin,
+  Clock,
+  CheckCircle2,
+  XCircle,
+  ChevronDown,
+  ChevronUp,
+  Play,
   Image as ImageIcon,
   ShieldCheck,
   CalendarCheck
@@ -48,6 +48,7 @@ import party2 from '../assets/bhb/Party boat/2.jpg';
 import party3 from '../assets/bhb/Party boat/3.jpg';
 import party4 from '../assets/bhb/Party boat/4.jpg';
 import party5 from '../assets/bhb/Party boat/5.jpg';
+import heroPartyBoat from '../assets/bhb/partyboat.jpeg';
 
 import congo1 from '../assets/bhb/congo/1.jpg';
 import congo2 from '../assets/bhb/congo/2.jpg';
@@ -128,7 +129,7 @@ const tourImages = {
   saona: { hero: heroSaona, gallery: getGallery([saona1, saona2, saona3, saona4, saona5]), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.06.31_PM_bqgkan', videoVertical: true },
   saonavip: { hero: heroSaona, gallery: getGallery([saona1, saona2, saona3, saona4, saona5]), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.06.31_PM_bqgkan', videoVertical: true },
   santodomingo: { hero: heroSantoDomingo, gallery: getGallery([santodomingoImage1, santodomingoImage2, santodomingoImage3, santodomingoImage4, santodomingoImage5]) },
-  party: { hero: heroCongo, gallery: getGallery([party1, party2, party3, party4, party5]) },
+  party: { hero: heroPartyBoat, gallery: getGallery([party1, party2, party3, party4, party5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1780937907/WhatsApp_Video_2026-06-08_at_11.41.51_AM_dt0mll.mp4', videoVertical: true },
   atv: { hero: heroAtv, gallery: getGallery([boguie1, boguie2, boguie3, boguie4, boguie5]), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.07.29_PM_c1gjp2', videoVertical: true },
   cocobongo: { hero: heroCongo, gallery: getGallery([congo1, congo2, congo3, congo4, congo5]) },
   scubadoo: { hero: heroScubaDoo, gallery: getGallery(['https://images.unsplash.com/photo-1561081533-3d09a067fffc?q=80&w=800&auto=format&fit=crop']), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.08.59_PM_hhlhh7', videoVertical: true },
@@ -148,7 +149,7 @@ const tourImages = {
 
 const WhatsAppIcon = ({ className }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className} width="24" height="24">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
   </svg>
 );
 
@@ -162,7 +163,7 @@ const FAQItem = ({ question, answer }) => {
       </button>
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -183,7 +184,7 @@ const BookingForm = ({ price, name, id, getLabel, t }) => {
 
   const basePrice = parseInt(price) || 0;
   let adultPrice = basePrice;
-  let kidsPrice = basePrice; 
+  let kidsPrice = basePrice;
 
   if (id === 'eldorado' || id === 'scapepark') {
     adultPrice = 129;
@@ -217,12 +218,12 @@ const BookingForm = ({ price, name, id, getLabel, t }) => {
       <div className="td2-bc-body">
         <div className="td2-input-group">
           <label>{getLabel('Date', 'Fecha', 'Data')}</label>
-          <input 
-            type="date" 
-            className="td2-input" 
-            value={date} 
-            onChange={e => setDate(e.target.value)} 
-            min={getToday()} 
+          <input
+            type="date"
+            className="td2-input"
+            value={date}
+            onChange={e => setDate(e.target.value)}
+            min={getToday()}
           />
         </div>
 
@@ -238,7 +239,7 @@ const BookingForm = ({ price, name, id, getLabel, t }) => {
               <button type="button" onClick={() => setAdults(adults + 1)}>+</button>
             </div>
           </div>
-          
+
           <div className="td2-guest-row">
             <div className="td2-guest-info">
               <strong>{getLabel('Kids', 'Niños', 'Crianças')}</strong>
@@ -274,7 +275,7 @@ const BookingForm = ({ price, name, id, getLabel, t }) => {
 const TourDetail = () => {
   const { id } = useParams();
   const { t, lang } = useTranslation();
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
@@ -286,26 +287,26 @@ const TourDetail = () => {
   const shortDesc = t(`tour.${id}.shortDesc`);
   const rating = t(`tour.${id}.rating`) || "4.9";
   const reviewsCount = t(`tour.${id}.reviewsCount`) || "300";
-  
+
   const images = tourImages[id] || tourImages.default;
 
   // Inclusions
   const inclusions = [];
-  for(let i=1; i<=12; i++) {
+  for (let i = 1; i <= 12; i++) {
     const f = t(`tour.${id}.f${i}`);
     if (f && typeof f === 'string' && !f.includes(`tour.${id}.f${i}`)) inclusions.push(f);
   }
 
   // Not Included
   const notIncluded = [];
-  for(let i=1; i<=3; i++) {
+  for (let i = 1; i <= 3; i++) {
     const ni = t(`tour.${id}.notIncluded${i}`);
     if (ni && typeof ni === 'string' && !ni.includes(`tour.${id}.notIncluded${i}`)) notIncluded.push(ni);
   }
 
   // Reviews
   const reviews = [];
-  for(let i=1; i<=2; i++) {
+  for (let i = 1; i <= 2; i++) {
     const rName = t(`tour.${id}.review${i}Name`);
     const rText = t(`tour.${id}.review${i}Text`);
     if (rName && !rName.includes(`review${i}Name`)) {
@@ -329,29 +330,29 @@ const TourDetail = () => {
 
   return (
     <div className="tour-detail-v2">
-      
+
       {/* 1. HERO PREMIUM FULLSCREEN */}
       <section className="td2-hero">
         <div className="td2-hero-bg">
           <img src={images.hero} alt={name} />
           <div className="td2-hero-overlay"></div>
         </div>
-        
+
         <div className="td2-container">
-          <motion.div 
+          <motion.div
             className="td2-hero-content"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <div className="td2-breadcrumbs">
-              <Link to="/">{getLabel('Home', 'Inicio', 'Início')}</Link> 
-              <span>/</span> 
+              <Link to="/">{getLabel('Home', 'Inicio', 'Início')}</Link>
+              <span>/</span>
               <span>{name}</span>
             </div>
-            
+
             <h1 className="td2-title">{name}</h1>
-            
+
             <div className="td2-meta">
               <div className="td2-meta-item">
                 <Star className="td2-icon-yellow" size={20} fill="currentColor" />
@@ -369,7 +370,7 @@ const TourDetail = () => {
 
             <div className="td2-hero-actions">
               {id === 'bavaropark' ? (
-                <a href="#bavaro-activities" onClick={(e) => { e.preventDefault(); document.getElementById('bavaro-activities').scrollIntoView({behavior: 'smooth', block: 'start'})}} className="td2-btn-primary">
+                <a href="#bavaro-activities" onClick={(e) => { e.preventDefault(); document.getElementById('bavaro-activities').scrollIntoView({ behavior: 'smooth', block: 'start' }) }} className="td2-btn-primary">
                   {getLabel('View Activities', 'Ver Actividades', 'Ver Atividades')}
                 </a>
               ) : (
@@ -378,7 +379,7 @@ const TourDetail = () => {
                   {getLabel('Book', 'Reservar', 'Reservar')}
                 </a>
               )}
-              <button className="td2-btn-secondary" onClick={() => document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})}>
+              <button className="td2-btn-secondary" onClick={() => document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' })}>
                 <ImageIcon size={20} className="mr-2" />
                 {t('tour.showAllPhotos') || 'Mostrar fotos'}
               </button>
@@ -400,10 +401,10 @@ const TourDetail = () => {
             <img src={images.gallery[4]} alt="Gallery 5" />
           </div>
         </div>
-        
+
         <div className="td2-gallery-mobile mobile-only">
           {images.gallery.map((img, i) => (
-            <img key={i} src={img} alt={`Gallery ${i+1}`} className="td2-mobile-slide" />
+            <img key={i} src={img} alt={`Gallery ${i + 1}`} className="td2-mobile-slide" />
           ))}
         </div>
       </section>
@@ -412,12 +413,12 @@ const TourDetail = () => {
       {id === 'bavaropark' ? (
         <section className="td2-container" id="bavaro-activities">
           <BavaroActivities />
-          
+
           {/* VIDEO PREMIUM */}
           {images.video && (
-            <motion.div 
+            <motion.div
               className="td2-block"
-              style={{marginTop: '40px'}}
+              style={{ marginTop: '40px' }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -444,9 +445,9 @@ const TourDetail = () => {
 
           {/* REVIEWS */}
           {reviews.length > 0 && (
-            <motion.div 
+            <motion.div
               className="td2-block"
-              style={{marginTop: '40px'}}
+              style={{ marginTop: '40px' }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -460,7 +461,7 @@ const TourDetail = () => {
                       <div>
                         <h4>{rev.name}</h4>
                         <div className="td2-stars">
-                          {[1,2,3,4,5].map(s => <Star key={s} size={14} fill="currentColor" />)}
+                          {[1, 2, 3, 4, 5].map(s => <Star key={s} size={14} fill="currentColor" />)}
                         </div>
                       </div>
                     </div>
@@ -472,7 +473,7 @@ const TourDetail = () => {
           )}
 
           {/* FAQ */}
-          <motion.div 
+          <motion.div
             className="td2-block"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -480,11 +481,11 @@ const TourDetail = () => {
           >
             <h2 className="td2-section-title">{t('tour.faqTitle') || getLabel('FAQ', 'Preguntas Frecuentes', 'Perguntas Frequentes')}</h2>
             <div className="td2-faq-list">
-              {[1,2,3,4].map(num => (
-                <FAQItem 
-                  key={num} 
-                  question={t(`tour.faq.q${num}`)} 
-                  answer={t(`tour.faq.a${num}`)} 
+              {[1, 2, 3, 4].map(num => (
+                <FAQItem
+                  key={num}
+                  question={t(`tour.faq.q${num}`)}
+                  answer={t(`tour.faq.a${num}`)}
                 />
               ))}
             </div>
@@ -492,151 +493,151 @@ const TourDetail = () => {
         </section>
       ) : (
         <section className="td2-container td2-layout">
-          
+
           <div className="td2-content-left">
-          
-          {/* ABOUT THE EXPERIENCE */}
-          <motion.div 
-            className="td2-block"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="td2-section-title">{t('tour.aboutTitle') || getLabel('The Experience', 'La Experiencia', 'A Experiência')}</h2>
-            <p className="td2-desc">{shortDesc}</p>
-          </motion.div>
 
-          {/* HIGHLIGHTS CARDS */}
-          <motion.div 
-            className="td2-block"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="td2-section-title">{getLabel('Highlights', 'Destacados', 'Destaques')}</h2>
-            <div className="td2-highlights-grid">
-              {inclusions.slice(0, 6).map((inc, i) => (
-                <div key={i} className="td2-highlight-card">
-                  <CheckCircle2 className="td2-highlight-icon" />
-                  <span>{inc}</span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* VIDEO PREMIUM */}
-          {images.video && (
-            <motion.div 
+            {/* ABOUT THE EXPERIENCE */}
+            <motion.div
               className="td2-block"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="td2-section-title">{getLabel('Video', 'Video', 'Vídeo')}</h2>
-              <div className={`td2-video-container ${images.videoVertical ? 'is-vertical' : ''}`}>
-                {images.video.includes('embed') ? (
-                  <iframe
-                    src={images.video}
-                    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-                    allowFullScreen
-                    frameBorder="0"
-                    title="Video"
-                  ></iframe>
-                ) : (
-                  <video controls preload="metadata">
-                    <source src={images.video} type="video/mp4" />
-                    {getLabel('Browser not supported.', 'Navegador no soportado.', 'Navegador não suportado.')}
-                  </video>
-                )}
-              </div>
+              <h2 className="td2-section-title">{t('tour.aboutTitle') || getLabel('The Experience', 'La Experiencia', 'A Experiência')}</h2>
+              <p className="td2-desc">{shortDesc}</p>
             </motion.div>
-          )}
 
-          {/* WHAT'S INCLUDED / NOT INCLUDED */}
-          <motion.div 
-            className="td2-block td2-inc-exc"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="td2-inc-card">
-              <h3>{t('tour.includes') || getLabel('Included', 'Incluye', 'Incluído')}</h3>
-              <ul>
-                {inclusions.map((inc, i) => (
-                  <li key={i}><CheckCircle2 className="td2-icon-green" /> {inc}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="td2-exc-card">
-              <h3>{t('tour.notIncludes') || getLabel('Not Included', 'No incluye', 'Não incluso')}</h3>
-              <ul>
-                {notIncluded.map((ni, i) => (
-                  <li key={i}><XCircle className="td2-icon-red" /> {ni}</li>
-                ))}
-              </ul>
-            </div>
-          </motion.div>
-
-          {/* MOBILE BOOKING FORM (Hidden on desktop, visible on mobile) */}
-          <div className="td2-mobile-booking">
-             <h2 className="td2-section-title">{getLabel('Reserve your spot', 'Reserva tu lugar', 'Reserve o seu lugar')}</h2>
-             <BookingForm price={price} name={name} id={id} getLabel={getLabel} t={t} />
-          </div>
-
-          {/* REVIEWS */}
-          {reviews.length > 0 && (
-            <motion.div 
+            {/* HIGHLIGHTS CARDS */}
+            <motion.div
               className="td2-block"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="td2-section-title">{getLabel('Traveler Reviews', 'Opiniones Reales', 'Avaliações Reais')}</h2>
-              <div className="td2-reviews-slider">
-                {reviews.map((rev, i) => (
-                  <div key={i} className="td2-review-card">
-                    <div className="td2-review-header">
-                      <div className="td2-avatar">{rev.name.charAt(0)}</div>
-                      <div>
-                        <h4>{rev.name}</h4>
-                        <div className="td2-stars">
-                          {[1,2,3,4,5].map(s => <Star key={s} size={14} fill="currentColor" />)}
-                        </div>
-                      </div>
-                    </div>
-                    <p>"{rev.text}"</p>
+              <h2 className="td2-section-title">{getLabel('Highlights', 'Destacados', 'Destaques')}</h2>
+              <div className="td2-highlights-grid">
+                {inclusions.slice(0, 6).map((inc, i) => (
+                  <div key={i} className="td2-highlight-card">
+                    <CheckCircle2 className="td2-highlight-icon" />
+                    <span>{inc}</span>
                   </div>
                 ))}
               </div>
             </motion.div>
-          )}
 
-          {/* FAQ */}
-          <motion.div 
-            className="td2-block"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="td2-section-title">{t('tour.faqTitle') || getLabel('FAQ', 'Preguntas Frecuentes', 'Perguntas Frequentes')}</h2>
-            <div className="td2-faq-list">
-              {[1,2,3,4].map(num => (
-                <FAQItem 
-                  key={num} 
-                  question={t(`tour.faq.q${num}`)} 
-                  answer={t(`tour.faq.a${num}`)} 
-                />
-              ))}
-            </div>
-          </motion.div>
+            {/* VIDEO PREMIUM */}
+            {images.video && (
+              <motion.div
+                className="td2-block"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="td2-section-title">{getLabel('Video', 'Video', 'Vídeo')}</h2>
+                <div className={`td2-video-container ${images.videoVertical ? 'is-vertical' : ''}`}>
+                  {images.video.includes('embed') ? (
+                    <iframe
+                      src={images.video}
+                      allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                      allowFullScreen
+                      frameBorder="0"
+                      title="Video"
+                    ></iframe>
+                  ) : (
+                    <video controls preload="metadata">
+                      <source src={images.video} type="video/mp4" />
+                      {getLabel('Browser not supported.', 'Navegador no soportado.', 'Navegador não suportado.')}
+                    </video>
+                  )}
+                </div>
+              </motion.div>
+            )}
 
-        </div>
+            {/* WHAT'S INCLUDED / NOT INCLUDED */}
+            <motion.div
+              className="td2-block td2-inc-exc"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="td2-inc-card">
+                <h3>{t('tour.includes') || getLabel('Included', 'Incluye', 'Incluído')}</h3>
+                <ul>
+                  {inclusions.map((inc, i) => (
+                    <li key={i}><CheckCircle2 className="td2-icon-green" /> {inc}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="td2-exc-card">
+                <h3>{t('tour.notIncludes') || getLabel('Not Included', 'No incluye', 'Não incluso')}</h3>
+                <ul>
+                  {notIncluded.map((ni, i) => (
+                    <li key={i}><XCircle className="td2-icon-red" /> {ni}</li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
 
-        {/* RIGHT COLUMN: STICKY CARD (Desktop only) */}
-        <div className="td2-content-right td2-desktop-booking">
-           <div className="td2-sticky-container">
+            {/* MOBILE BOOKING FORM (Hidden on desktop, visible on mobile) */}
+            <div className="td2-mobile-booking">
+              <h2 className="td2-section-title">{getLabel('Reserve your spot', 'Reserva tu lugar', 'Reserve o seu lugar')}</h2>
               <BookingForm price={price} name={name} id={id} getLabel={getLabel} t={t} />
-              
+            </div>
+
+            {/* REVIEWS */}
+            {reviews.length > 0 && (
+              <motion.div
+                className="td2-block"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <h2 className="td2-section-title">{getLabel('Traveler Reviews', 'Opiniones Reales', 'Avaliações Reais')}</h2>
+                <div className="td2-reviews-slider">
+                  {reviews.map((rev, i) => (
+                    <div key={i} className="td2-review-card">
+                      <div className="td2-review-header">
+                        <div className="td2-avatar">{rev.name.charAt(0)}</div>
+                        <div>
+                          <h4>{rev.name}</h4>
+                          <div className="td2-stars">
+                            {[1, 2, 3, 4, 5].map(s => <Star key={s} size={14} fill="currentColor" />)}
+                          </div>
+                        </div>
+                      </div>
+                      <p>"{rev.text}"</p>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {/* FAQ */}
+            <motion.div
+              className="td2-block"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="td2-section-title">{t('tour.faqTitle') || getLabel('FAQ', 'Preguntas Frecuentes', 'Perguntas Frequentes')}</h2>
+              <div className="td2-faq-list">
+                {[1, 2, 3, 4].map(num => (
+                  <FAQItem
+                    key={num}
+                    question={t(`tour.faq.q${num}`)}
+                    answer={t(`tour.faq.a${num}`)}
+                  />
+                ))}
+              </div>
+            </motion.div>
+
+          </div>
+
+          {/* RIGHT COLUMN: STICKY CARD (Desktop only) */}
+          <div className="td2-content-right td2-desktop-booking">
+            <div className="td2-sticky-container">
+              <BookingForm price={price} name={name} id={id} getLabel={getLabel} t={t} />
+
               <div className="td2-sticky-features mt-4">
                 <div className="td2-sf-item">
                   <Clock className="td2-sf-icon" />
@@ -653,15 +654,15 @@ const TourDetail = () => {
                   </div>
                 </div>
               </div>
-           </div>
-        </div>
-      </section>
+            </div>
+          </div>
+        </section>
       )}
 
       {/* 4. FINAL CTA BANNER */}
       <section className="td2-final-cta">
         <div className="td2-container">
-          <motion.div 
+          <motion.div
             className="td2-cta-content"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -669,7 +670,7 @@ const TourDetail = () => {
           >
             <h2>{t('tour.ctaFinalTitle') || getLabel('Ready?', '¿Listo?', 'Pronto?')}</h2>
             <p>{t('tour.ctaFinalSub')}</p>
-            <a href={id === 'bavaropark' ? "#bavaro-activities" : "#booking-form"} onClick={id === 'bavaropark' ? (e) => { e.preventDefault(); document.getElementById('bavaro-activities').scrollIntoView({behavior: 'smooth', block: 'start'})} : scrollToBooking} className="td2-btn-white">
+            <a href={id === 'bavaropark' ? "#bavaro-activities" : "#booking-form"} onClick={id === 'bavaropark' ? (e) => { e.preventDefault(); document.getElementById('bavaro-activities').scrollIntoView({ behavior: 'smooth', block: 'start' }) } : scrollToBooking} className="td2-btn-white">
               <WhatsAppIcon className="mr-2" />
               {id === 'bavaropark' ? getLabel('View Activities', 'Ver Actividades', 'Ver Atividades') : getLabel('Book Now', 'Reserva Ahora', 'Reservar Agora')}
             </a>
@@ -679,16 +680,16 @@ const TourDetail = () => {
 
       {/* MOBILE STICKY BOTTOM BAR */}
       {id !== 'bavaropark' && (
-      <div className="td2-mobile-sticky-bar">
-        <div className="td2-ms-price">
-          <span className="td2-ms-label">{getLabel('Price', 'Precio', 'Preço')}</span>
-          <span className="td2-ms-value">${price} USD</span>
+        <div className="td2-mobile-sticky-bar">
+          <div className="td2-ms-price">
+            <span className="td2-ms-label">{getLabel('Price', 'Precio', 'Preço')}</span>
+            <span className="td2-ms-value">${price} USD</span>
+          </div>
+          <a href="#booking-form" onClick={scrollToBooking} className="td2-btn-whatsapp-mobile">
+            <WhatsAppIcon className="mr-1" />
+            {getLabel('Book', 'Reservar', 'Reservar')}
+          </a>
         </div>
-        <a href="#booking-form" onClick={scrollToBooking} className="td2-btn-whatsapp-mobile">
-          <WhatsAppIcon className="mr-1" />
-          {getLabel('Book', 'Reservar', 'Reservar')}
-        </a>
-      </div>
       )}
 
     </div>
