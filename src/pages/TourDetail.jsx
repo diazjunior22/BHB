@@ -108,6 +108,12 @@ import scapeImage3 from '../assets/bhb/Scape Park/3.jpg';
 import scapeImage4 from '../assets/bhb/Scape Park/4.jpg';
 import scapeImage5 from '../assets/bhb/Scape Park/5.jpg';
 
+import funpark1 from '../assets/bhb/funkpark/funkpark1.jpg';
+import funpark2 from '../assets/bhb/funkpark/funakpark2.jpg';
+import funpark3 from '../assets/bhb/funkpark/funakpark3.jpg';
+import funpark4 from '../assets/bhb/funkpark/funakpark4.jpg';
+import funpark6 from '../assets/bhb/funkpark/funkpark6.jpg';
+
 const defaultGallery = [
   'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=600&auto=format&fit=crop',
@@ -127,19 +133,19 @@ const getGallery = (customGallery) => {
 
 const tourImages = {
   saona: { hero: heroSaona, gallery: getGallery([saona1, saona2, saona3, saona4, saona5]), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.06.31_PM_bqgkan', videoVertical: true },
-  saonavip: { hero: heroSaona, gallery: getGallery([saona1, saona2, saona3, saona4, saona5]), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.06.31_PM_bqgkan', videoVertical: true },
-  santodomingo: { hero: heroSantoDomingo, gallery: getGallery([santodomingoImage1, santodomingoImage2, santodomingoImage3, santodomingoImage4, santodomingoImage5]) },
+  saonavip: { hero: heroSaona, gallery: getGallery([saona1, saona2, saona3, saona4, saona5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781295323/WhatsApp_Video_2026-06-12_at_9.09.56_AM_panfyw.mp4', videoVertical: true },
+  santodomingo: { hero: heroSantoDomingo, gallery: getGallery([santodomingoImage1, santodomingoImage2, santodomingoImage3, santodomingoImage4, santodomingoImage5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781294289/WhatsApp_Video_2026-06-12_at_9.04.41_AM_vupjsb.mp4', videoVertical: true },
   party: { hero: heroPartyBoat, gallery: getGallery([party1, party2, party3, party4, party5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1780937907/WhatsApp_Video_2026-06-08_at_11.41.51_AM_dt0mll.mp4', videoVertical: true },
   atv: { hero: heroAtv, gallery: getGallery([boguie1, boguie2, boguie3, boguie4, boguie5]), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.07.29_PM_c1gjp2', videoVertical: true },
-  cocobongo: { hero: heroCongo, gallery: getGallery([congo1, congo2, congo3, congo4, congo5]) },
+  cocobongo: { hero: heroCongo, gallery: getGallery([congo1, congo2, congo3, congo4, congo5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781294900/WhatsApp_Video_2026-06-12_at_9.06.48_AM_tckb0q.mp4', videoVertical: true },
   scubadoo: { hero: heroScubaDoo, gallery: getGallery(['https://images.unsplash.com/photo-1561081533-3d09a067fffc?q=80&w=800&auto=format&fit=crop']), video: 'https://player.cloudinary.com/embed/?cloud_name=dmtqsct7k&public_id=WhatsApp_Video_2026-06-01_at_3.08.59_PM_hhlhh7', videoVertical: true },
-  cocobongovip: { hero: heroCongoVip, gallery: getGallery([congo1, congo2, congo3, congo4, congo5]) },
+  cocobongovip: { hero: heroCongoVip, gallery: getGallery([congo1, congo2, congo3, congo4, congo5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781294900/WhatsApp_Video_2026-06-12_at_9.06.48_AM_tckb0q.mp4', videoVertical: true },
   dolphinexplorer: { hero: heroDolphinExplorer, gallery: getGallery([dolphinImage1, dolphinImage2, dolphinImage3, dolphinImage4, dolphinImage5]) },
   scapepark: { hero: heroScapePark, gallery: getGallery([scapeImage1, scapeImage2, scapeImage3, scapeImage4, scapeImage5]) },
   haciendapark: { hero: heroHaciendaPark, gallery: getGallery(['https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=800&auto=format&fit=crop']), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1780847645/WhatsApp_Video_2026-06-07_at_10.51.14_AM_qihqnp.mp4', videoVertical: true },
-  pescafishing: { hero: heroPescaFishing, gallery: getGallery([pescaImage1, pescaImage2, pescaImage3, pescaImage4]) },
-  funpark: { hero: heroFunPark, gallery: getGallery(['https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=800&auto=format&fit=crop']) },
-  samana: { hero: heroSamana, gallery: getGallery([samanaImage1, samanaImage2, samanaImage3, samanaImage4]) },
+  pescafishing: { hero: heroPescaFishing, gallery: getGallery([pescaImage1, pescaImage2, pescaImage3, pescaImage4]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781294942/WhatsApp_Video_2026-06-12_at_9.18.47_AM_sdf9bo.mp4', videoVertical: true },
+  funpark: { hero: heroFunPark, gallery: getGallery([funpark1, funpark2, funpark3, funpark4, funpark6]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781295210/WhatsApp_Video_2026-06-12_at_9.17.42_AM_sfvixa.mp4', videoVertical: true },
+  samana: { hero: heroSamana, gallery: getGallery([samanaImage1, samanaImage2, samanaImage3, samanaImage4]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781294473/WhatsApp_Video_2026-06-12_at_9.06.08_AM_f0br6d.mp4', videoVertical: true },
   catalinaisland: { hero: heroCatalinaIsland, gallery: getGallery([catalinaImage1, catalinaImage2, catalinaImage3, catalinaImage4, catalinaImage5]) },
   parasailing: { hero: heroParasailing, gallery: getGallery([parasailingImage1, parasailingImage2, parasailingImage3, parasailingImage4, parasailingImage5]) },
   eldorado: { hero: heroElDorado, gallery: getGallery([elDorado1, elDorado2, elDorado3, elDorado4]) },
@@ -263,7 +269,18 @@ const BookingForm = ({ price, name, id, getLabel, t }) => {
           {getLabel('Book via WhatsApp', 'Reservar por WhatsApp', 'Reservar via WhatsApp')}
         </button>
 
-        <div className="td2-safe-badge mt-3">
+        <div className="td2-payment-methods mt-3">
+          <span className="td2-pm-label">{getLabel('Payment Methods:', 'Métodos de Pago:', 'Métodos de Pagamento:')}</span>
+          <div className="td2-pm-icons">
+            <svg viewBox="0 0 24 24" fill="#003087" width="24" height="24">
+              <path d="M7.076 21.337H5.67a.64.64 0 0 1-.633-.74l2.128-13.43a.64.64 0 0 1 .633-.54h4.86c2.698 0 4.103 1.096 4.103 3.124 0 2.502-1.684 4.542-4.086 4.542h-1.67a.64.64 0 0 0-.633.54l-1.042 6.504a.64.64 0 0 1-.633.54h-1.621z" />
+              <path d="M10.457 10.364l-1.042 6.504a.64.64 0 0 1-.633.54H7.076a.64.64 0 0 1-.633-.74l2.128-13.43a.64.64 0 0 1 .633-.54h4.86c2.698 0 4.103 1.096 4.103 3.124 0 1.25-.39 2.3-1.048 3.03-.59.65-1.42 1.01-2.404 1.01h-2.186a1.28 1.28 0 0 0-1.266 1.08z" opacity="0.5" fill="#0079C1" />
+            </svg>
+            <span className="td2-pm-text">PayPal</span>
+          </div>
+        </div>
+
+        <div className="td2-safe-badge mt-2">
           <ShieldCheck size={18} />
           <span>{t('tour.safeReserve') || getLabel('Secure Booking', 'Reserva Segura', 'Reserva Segura')}</span>
         </div>

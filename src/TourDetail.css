@@ -641,6 +641,37 @@
   color: #fff;
 }
 
+.td2-payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.td2-pm-label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+}
+
+.td2-pm-icons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.td2-pm-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #003087;
+  font-style: italic;
+}
+
 .td2-safe-badge {
   display: flex;
   align-items: center;
