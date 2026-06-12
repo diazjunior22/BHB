@@ -124,7 +124,7 @@ const restrictions = [
 const BavaroActivities = () => {
   const handleBook = (title) => {
     const msg = `Hola, me interesa reservar la actividad: *${title}* en Bávaro Adventure Park.`;
-    window.open(`https://wa.me/18295555555?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/18094654750?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (

@@ -206,7 +206,7 @@ const BookingForm = ({ price, name, id, getLabel, t }) => {
       return;
     }
     const msg = `Hola, me interesa reservar el tour: *${name}*\n\n📅 Fecha: ${date}\n👥 Personas: ${adults} Adultos, ${kids} Niños.\n💰 Total estimado: $${total} USD.`;
-    const whatsappUrl = `https://wa.me/18295555555?text=${encodeURIComponent(msg)}`;
+    const whatsappUrl = `https://wa.me/18094654750?text=${encodeURIComponent(msg)}`;
     window.open(whatsappUrl, '_blank');
   };
 

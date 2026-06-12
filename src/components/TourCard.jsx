@@ -74,7 +74,7 @@ const TourCard = ({ id, img, badgeKey, nameKey, locationKey, featuresKeys, noteK
           </div>
           <div className="tour-card-actions">
             <Link to={`/tours/${id}`} className="btn-tour-primary">{getLabel('View Tour', 'Ver Tour', 'Ver Tour')}</Link>
-            <a href="https://wa.me/18295555555" target="_blank" rel="noreferrer" className="btn-tour-secondary">
+            <a href="https://wa.me/18094654750" target="_blank" rel="noreferrer" className="btn-tour-secondary">
               {getLabel('Book Now', 'Reservar Ahora', 'Reservar Agora')}
             </a>
           </div>

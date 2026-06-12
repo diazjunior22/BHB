@@ -135,7 +135,7 @@
         'contact.location.label': 'Ubicación',
         'contact.location.value': 'Punta Cana, República Dominicana',
         'contact.whatsapp.label': 'WhatsApp',
-        'contact.whatsapp.value': '+1 (829) 555-5555',
+        'contact.whatsapp.value': '+1 (809) 465-4750',
         'contact.email.label': 'Email',
         'contact.email.value': 'info@bhbtravelandtour.com',
 
@@ -292,7 +292,7 @@
         'contact.location.label': 'Location',
         'contact.location.value': 'Punta Cana, Dominican Republic',
         'contact.whatsapp.label': 'WhatsApp',
-        'contact.whatsapp.value': '+1 (829) 555-5555',
+        'contact.whatsapp.value': '+1 (809) 465-4750',
         'contact.email.label': 'Email',
         'contact.email.value': 'info@bhbtravelandtour.com',
 
@@ -447,7 +447,7 @@
         'contact.location.label': 'Localização',
         'contact.location.value': 'Punta Cana, República Dominicana',
         'contact.whatsapp.label': 'WhatsApp',
-        'contact.whatsapp.value': '+1 (829) 555-5555',
+        'contact.whatsapp.value': '+1 (809) 465-4750',
         'contact.email.label': 'Email',
         'contact.email.value': 'info@bhbtravelandtour.com',
 
