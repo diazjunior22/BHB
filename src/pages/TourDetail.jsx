@@ -32,6 +32,7 @@ import heroCatalinaIsland from '../assets/bhb/Catalina Island.jpeg';
 import heroParasailing from '../assets/bhb/Parasailing.jpeg';
 import heroElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import heroAtv from '../assets/bhb/boguie.png';
+import heroBuceoCatalina from '../assets/bhb/Buceo en Isla Catalina.jpeg';
 import elDorado1 from '../assets/bhb/El Dorado Park/1.jpeg';
 import elDorado2 from '../assets/bhb/El Dorado Park/2.jpeg';
 import elDorado3 from '../assets/bhb/El Dorado Park/3.jpeg';
@@ -114,6 +115,11 @@ import funpark3 from '../assets/bhb/funkpark/funakpark3.jpg';
 import funpark4 from '../assets/bhb/funkpark/funakpark4.jpg';
 import funpark6 from '../assets/bhb/funkpark/funkpark6.jpg';
 
+import buceo1 from '../assets/bhb/Buceo en Isla Catalina/1.jpg';
+import buceo2 from '../assets/bhb/Buceo en Isla Catalina/2.jpg';
+import buceo3 from '../assets/bhb/Buceo en Isla Catalina/3.jpg';
+import buceo4 from '../assets/bhb/Buceo en Isla Catalina/4.jpg';
+
 const defaultGallery = [
   'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=600&auto=format&fit=crop',
@@ -150,6 +156,7 @@ const tourImages = {
   parasailing: { hero: heroParasailing, gallery: getGallery([parasailingImage1, parasailingImage2, parasailingImage3, parasailingImage4, parasailingImage5]) },
   eldorado: { hero: heroElDorado, gallery: getGallery([elDorado1, elDorado2, elDorado3, elDorado4]) },
   bavaropark: { hero: heroAtv, gallery: getGallery([bavaroImage1, bavaroImage2, bavaroImage3, bavaroImage4, bavaroImage5]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1780848151/WhatsApp_Video_2026-06-07_at_10.55.21_AM_x865ht.mp4', videoVertical: true },
+  buceocatalina: { hero: heroBuceoCatalina, gallery: getGallery([buceo1, buceo2, buceo3, buceo4]), video: 'https://res.cloudinary.com/dmtqsct7k/video/upload/v1781369678/WhatsApp_Video_2026-06-12_at_6.50.00_PM_bs5izn.mp4', videoVertical: true },
   default: { hero: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1400&auto=format&fit=crop', gallery: defaultGallery }
 };
 

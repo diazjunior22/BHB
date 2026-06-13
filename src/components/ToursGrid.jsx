@@ -19,6 +19,7 @@ import imgElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import imgAtv from '../assets/bhb/boguie.png';
 import imgBavaro from '../assets/bhb/bavaro.png';
 import imgPartyBoat from '../assets/bhb/partyboat.jpeg';
+import imgBuceoCatalina from '../assets/bhb/Buceo en Isla Catalina.jpeg';
 
 const ToursGrid = () => {
   const { t } = useTranslation();
@@ -335,6 +336,23 @@ const ToursGrid = () => {
               'tour.bavaropark.f5'
             ]}
             delay="d1"
+          />
+
+          <TourCard 
+            id="buceocatalina"
+            img={imgBuceoCatalina} 
+            badgeKey="tour.buceocatalina.badge"
+            nameKey="tour.buceocatalina.name"
+            locationKey="tour.buceocatalina.location"
+            noteKey="tour.buceocatalina.note"
+            featuresKeys={[
+              'tour.buceocatalina.f1', 
+              'tour.buceocatalina.f2', 
+              'tour.buceocatalina.f3', 
+              'tour.buceocatalina.f4',
+              'tour.buceocatalina.f5'
+            ]}
+            delay="d2"
           />
         </div>
       </div>

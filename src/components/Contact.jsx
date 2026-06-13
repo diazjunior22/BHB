@@ -117,6 +117,7 @@ const Contact = () => {
                       <option value="funpark">{t('tour.funpark.name')}</option>
                       <option value="samana">{t('tour.samana.name')}</option>
                       <option value="catalinaisland">{t('tour.catalinaisland.name')}</option>
+                      <option value="buceocatalina">{t('tour.buceocatalina.name')}</option>
                       <option value="parasailing">{t('tour.parasailing.name')}</option>
                       <option value="eldorado">{t('tour.eldorado.name')}</option>
                     </select>
