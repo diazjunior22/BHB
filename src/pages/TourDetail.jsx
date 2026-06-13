@@ -32,7 +32,7 @@ import heroCatalinaIsland from '../assets/bhb/Catalina Island.jpeg';
 import heroParasailing from '../assets/bhb/Parasailing.jpeg';
 import heroElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import heroAtv from '../assets/bhb/boguie.png';
-import heroBuceoCatalina from '../assets/bhb/Buceo en Isla Catalina.jpeg';
+import heroBuceoCatalina from '../assets/bhb/Buceo en Isla Catalina.jpg';
 import elDorado1 from '../assets/bhb/El Dorado Park/1.jpeg';
 import elDorado2 from '../assets/bhb/El Dorado Park/2.jpeg';
 import elDorado3 from '../assets/bhb/El Dorado Park/3.jpeg';

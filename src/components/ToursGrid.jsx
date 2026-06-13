@@ -19,7 +19,7 @@ import imgElDorado from '../assets/bhb/El Dorado Park.jpeg';
 import imgAtv from '../assets/bhb/boguie.png';
 import imgBavaro from '../assets/bhb/bavaro.png';
 import imgPartyBoat from '../assets/bhb/partyboat.jpeg';
-import imgBuceoCatalina from '../assets/bhb/Buceo en Isla Catalina.jpeg';
+import imgBuceoCatalina from '../assets/bhb/Buceo en Isla Catalina.jpg';
 
 const ToursGrid = () => {
   const { t } = useTranslation();
