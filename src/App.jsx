@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import './TourCard.css';
 import './TourDetail.css';
+import './Transport.css';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { I18nProvider } from './I18nContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import TourDetail from './pages/TourDetail';
+import Transport from './pages/Transport';
 
 // ScrollToTop on route change
 const ScrollToTop = () => {
@@ -54,6 +56,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tours/:id" element={<TourDetail />} />
+            <Route path="/transporte" element={<Transport />} />
           </Routes>
         </main>
         <Footer />

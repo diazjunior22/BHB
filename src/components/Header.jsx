@@ -51,6 +51,7 @@ const Header = () => {
           </a>
           <nav className={`nav ${menuOpen ? 'open' : ''}`} id="nav">
             <a href="/#tours" onClick={(e) => handleNavClick(e, '#tours')}>{t('nav.tours')}</a>
+            <a href="/transporte">{t('nav.transport')}</a>
             <a href="/#about" onClick={(e) => handleNavClick(e, '#about')}>{t('nav.about')}</a>
             <a href="/#contact" onClick={(e) => handleNavClick(e, '#contact')}>{t('nav.contact')}</a>
             <a href="/#contact" className="btn-nav" onClick={(e) => handleNavClick(e, '#contact')}>{t('nav.reserve')}</a>
