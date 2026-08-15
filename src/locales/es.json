@@ -672,5 +672,16 @@
   "tour.buceocatalina.notIncluded2": "Propinas (opcional)",
   "tour.buceocatalina.notIncluded3": "Fotos profesionales",
   "tour.buceocatalina.rating": "5.0",
-  "tour.buceocatalina.reviewsCount": "124"
+  "tour.buceocatalina.reviewsCount": "124",
+  "transport.fleet.title": "Nuestra Flota",
+  "transport.fleet.desc": "Vehículos modernos y confortables para tu traslado.",
+  "transport.fleet.suv.name": "SUV VIP",
+  "transport.fleet.suv.cap": "1 - 5 Pasajeros",
+  "transport.fleet.suv.feat": "Asientos de cuero, Wi-Fi, A/C",
+  "transport.fleet.minivan.name": "Hyundai H1",
+  "transport.fleet.minivan.cap": "1 - 7 Pasajeros",
+  "transport.fleet.minivan.feat": "Asientos confortables, A/C, Espacioso",
+  "transport.fleet.minibus.name": "Toyota Hiace",
+  "transport.fleet.minibus.cap": "8 - 15 Pasajeros",
+  "transport.fleet.minibus.feat": "Techo alto, A/C, Ideal para grupos"
 }

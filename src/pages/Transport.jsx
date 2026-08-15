@@ -1,8 +1,33 @@
 import React, { useState } from 'react';
 import { useTranslation } from '../I18nContext';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.1 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { 
+    opacity: 1, 
+    y: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 }
+  },
+};
 
 const Transport = () => {
   const { lang, t } = useTranslation();
+  const { scrollY } = useScroll();
+  
+  // Parallax calculations
+  const heroBgY = useTransform(scrollY, [0, 600], ['0%', '30%']);
+  const heroContentY = useTransform(scrollY, [0, 400], [0, 80]);
+  const heroContentOpacity = useTransform(scrollY, [0, 300], [1, 0]);
+
   const [formData, setFormData] = useState({
     origin: '',
     destination: '',
@@ -52,34 +77,106 @@ const Transport = () => {
     window.open(url, '_blank');
   };
 
+  const fleet = [
+    {
+      img: '/img/suv_vip.jpg',
+      nameKey: 'transport.fleet.suv.name',
+      capKey: 'transport.fleet.suv.cap',
+      featKey: 'transport.fleet.suv.feat',
+    },
+    {
+      img: '/img/minivan_vip.jpg',
+      nameKey: 'transport.fleet.minivan.name',
+      capKey: 'transport.fleet.minivan.cap',
+      featKey: 'transport.fleet.minivan.feat',
+    },
+    {
+      img: '/img/minibus.jpg',
+      nameKey: 'transport.fleet.minibus.name',
+      capKey: 'transport.fleet.minibus.cap',
+      featKey: 'transport.fleet.minibus.feat',
+    }
+  ];
+
   return (
     <section className="transport-section">
       <div className="transport-hero">
-        <div className="transport-hero-bg" />
+        <motion.div 
+          className="transport-hero-bg" 
+          style={{ y: heroBgY }}
+        />
         <div className="transport-hero-overlay" />
-        <div className="container transport-hero-content">
-          <span className="label transport-label">
+        <motion.div 
+          className="container transport-hero-content"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+          style={{ y: heroContentY, opacity: heroContentOpacity }}
+        >
+          <motion.span variants={itemVariants} className="label transport-label">
             {getLabel('Transfers', 'Transporte', 'Transporte')}
-          </span>
-          <h1 className="heading-lg transport-hero-title">
+          </motion.span>
+          <motion.h1 variants={itemVariants} className="heading-lg transport-hero-title">
             {getLabel(
               <>Book Your<br/>Private Transfer</>,
               <>Reserva tu<br/>Transporte Privado</>,
               <>Reserve seu<br/>Transporte Privado</>
             )}
-          </h1>
-          <p className="body-lg transport-hero-desc">
+          </motion.h1>
+          <motion.p variants={itemVariants} className="body-lg transport-hero-desc">
             {getLabel(
               'We pick you up and take you to your destination. Comfortable, safe, and on time.',
               'Te recogemos y llevamos a tu destino. Cómodo, seguro y puntual.',
               'Nós buscamos e levamos ao seu destino. Confortável, seguro e pontual.'
             )}
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
 
-      <div className="container transport-form-wrap fade-up">
-        <div className="transport-card">
+      <motion.div 
+        className="container fleet-section"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <div className="fleet-header">
+          <h2>{t('transport.fleet.title')}</h2>
+          <p>{t('transport.fleet.desc')}</p>
+        </div>
+        <motion.div 
+          className="fleet-grid"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+        >
+          {fleet.map((vehicle, index) => (
+            <motion.div variants={itemVariants} className="fleet-card" key={index}>
+              <div className="fleet-img">
+                <img src={vehicle.img} alt={t(vehicle.nameKey)} />
+              </div>
+              <div className="fleet-info">
+                <h3>{t(vehicle.nameKey)}</h3>
+                <p className="fleet-cap">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  {t(vehicle.capKey)}
+                </p>
+                <p className="fleet-feat">{t(vehicle.featKey)}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+
+      <motion.div 
+        className="container transport-form-wrap"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <div className="transport-card form-card">
           <div className="transport-card-header">
             <h2>{getLabel('Transfer Details', 'Detalles del Traslado', 'Detalhes do Traslado')}</h2>
             <p>{getLabel('Fill in the information and we will confirm your transfer.', 'Completa la información y te confirmaremos el traslado.', 'Preencha as informações e confirmaremos o traslado.')}</p>
@@ -96,11 +193,7 @@ const Transport = () => {
                   type="text"
                   id="origin"
                   required
-                  placeholder={getLabel(
-                    'Where should we pick you up?',
-                    '¿Dónde te recogemos?',
-                    'Onde devemos buscá-lo?'
-                  )}
+                  placeholder={getLabel('Where should we pick you up?', '¿Dónde te recogemos?', 'Onde devemos buscá-lo?')}
                   value={formData.origin}
                   onChange={handleChange}
                 />
@@ -115,11 +208,7 @@ const Transport = () => {
                   type="text"
                   id="destination"
                   required
-                  placeholder={getLabel(
-                    'Where are you going?',
-                    '¿A dónde vas?',
-                    'Para onde você vai?'
-                  )}
+                  placeholder={getLabel('Where are you going?', '¿A dónde vas?', 'Para onde você vai?')}
                   value={formData.destination}
                   onChange={handleChange}
                 />
@@ -180,27 +269,25 @@ const Transport = () => {
               <textarea
                 id="note"
                 rows="3"
-                placeholder={getLabel(
-                  'Any additional details... (optional)',
-                  'Detalles adicionales... (opcional)',
-                  'Detalhes adicionais... (opcional)'
-                )}
+                placeholder={getLabel('Any additional details... (optional)', 'Detalles adicionales... (opcional)', 'Detalhes adicionais... (opcional)')}
                 value={formData.note}
                 onChange={handleChange}
               />
             </div>
 
-            <button type="submit" className="tp-btn-submit">
+            <motion.button 
+              type="submit" 
+              className="tp-btn-submit"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              {getLabel(
-                'Book via WhatsApp',
-                'Reservar por WhatsApp',
-                'Reservar via WhatsApp'
-              )}
-            </button>
+              {getLabel('Book via WhatsApp', 'Reservar por WhatsApp', 'Reservar via WhatsApp')}
+            </motion.button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

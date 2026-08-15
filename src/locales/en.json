@@ -671,5 +671,16 @@
   "tour.buceocatalina.notIncluded2": "Tips (optional)",
   "tour.buceocatalina.notIncluded3": "Professional photos",
   "tour.buceocatalina.rating": "5.0",
-  "tour.buceocatalina.reviewsCount": "124"
+  "tour.buceocatalina.reviewsCount": "124",
+  "transport.fleet.title": "Our Fleet",
+  "transport.fleet.desc": "Modern and comfortable vehicles for your transfer.",
+  "transport.fleet.suv.name": "SUV VIP",
+  "transport.fleet.suv.cap": "1 - 5 Passengers",
+  "transport.fleet.suv.feat": "Leather seats, Wi-Fi, A/C",
+  "transport.fleet.minivan.name": "Hyundai H1",
+  "transport.fleet.minivan.cap": "1 - 7 Passengers",
+  "transport.fleet.minivan.feat": "Comfortable seats, A/C, Spacious",
+  "transport.fleet.minibus.name": "Toyota Hiace",
+  "transport.fleet.minibus.cap": "8 - 15 Passengers",
+  "transport.fleet.minibus.feat": "High roof, A/C, Ideal for groups"
 }
